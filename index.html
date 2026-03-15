@@ -18,8 +18,6 @@ padding:30px;
 overflow-x:hidden;
 }
 
-/* glowing title */
-
 .glow{
 font-size:2.4rem;
 color:#ffd1f4;
@@ -31,22 +29,16 @@ text-shadow:
 margin-bottom:10px;
 }
 
-/* subtitle */
-
 .subtitle{
 opacity:0.85;
 margin-bottom:25px;
 }
-
-/* main puppy image */
 
 #puppy-display{
 width:280px;
 border-radius:20px;
 box-shadow:0 0 30px rgba(255,255,255,0.3);
 }
-
-/* buttons */
 
 button{
 margin:15px;
@@ -64,8 +56,6 @@ transition:0.3s;
 button:hover{
 transform:scale(1.1);
 }
-
-/* floating puppies */
 
 .floating{
 position:fixed;
@@ -93,8 +83,6 @@ opacity:0;
 
 }
 
-/* healing hearts */
-
 .heart{
 position:fixed;
 color:#ff9bd4;
@@ -115,8 +103,6 @@ opacity:0;
 }
 
 }
-
-/* puppy delivering tulip */
 
 .delivery{
 font-size:60px;
@@ -178,20 +164,12 @@ Every puppy here is sending you strength and a tiny woof of love 🐾
 
 <script>
 
-/* puppy flower gifs */
-
 const puppyGifs=[
 
 "images/puppy-flower1.gif",
-"images/puppy-flower2.gif",
-"images/puppy-flower3.gif",
-"images/puppy-flower4.gif",
-"images/puppy-flower5.gif"
+"images/puppy-flower2.gif"
 
 ];
-
-
-/* change puppy */
 
 function newPuppy(){
 
@@ -202,9 +180,6 @@ img.src=puppyGifs[Math.floor(Math.random()*puppyGifs.length)];
 spawnHeart();
 
 }
-
-
-/* healing hearts */
 
 function spawnHeart(){
 
@@ -228,12 +203,7 @@ heart.remove();
 
 }
 
-
-/* puppy hug button */
-
 function puppyHug(){
-
-/* tulip delivery animation */
 
 const delivery=document.createElement("div");
 
@@ -249,19 +219,13 @@ delivery.remove();
 
 },7000);
 
-
-/* extra hearts */
-
-for(let i=0;i<10;i++){
+for(let i=0;i<8;i++){
 
 spawnHeart();
 
 }
 
 }
-
-
-/* floating puppies background */
 
 setInterval(()=>{
 
@@ -288,3 +252,4 @@ pup.remove();
 </body>
 </html>
 ```
+
